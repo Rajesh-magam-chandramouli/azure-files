@@ -1,0 +1,32 @@
+##UserLogin
+az login
+az logout
+az account show
+
+az login --use-device-code
+az account show
+az logout
+az account show
+
+az login -u chandrasekhar@devopsbychandu3.onmicrosoft.com
+az logout
+
+## service principle
+az login --service-principal -u a9ff22d9-a619-422f-9b04-f92737872a18 -p bIu8Q~LcC-fs.UbBTA2w2gBuSqJ21djVMNEYdcsD --tenant sakoksdllsvoifnildno
+az account show
+az logout
+
+
+
+## Managed Identity
+az login --identity
+az logout
+
+az login --identity --username <client_id|object_id|resource_id>
+az logout
+
+
+# account set.
+
+az account set -s subscription1
+az account show
